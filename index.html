@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokemon Museum</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            #pokemon-info {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 260px;
+                padding: 16px;
+                color: white;
+                background: rgba(20, 20, 40, 0.9);
+                border: 1px solid #7777aa;
+                border-radius: 10px;
+                display: none;
+                z-index: 10;
+            }
+
+            #pokemon-info h2 {
+                margin-top: 0;
+                color: #ffd700;
+            }
+
+            #pokemon-info p {
+                margin-bottom: 8px;
+            }
+
+            #close-info {
+                padding: 6px 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pokemon-info">
+            <h2 id="pokemon-name"></h2>
+            <p id="pokemon-type"></p>
+            <p id="pokemon-description"></p>
+            <button id="close-info">Close</button>
+        </div>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "/three.js-r145/build/three.module.js"
+                }
+            }
+        </script>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
